@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>广汽传祺GA8</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="cache-control" content="no-cache">
+<script type="text/javascript" src="js/rem.js"></script>
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/animation.css">
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/iCore.nswp.js"></script>
+<script src="js/public.js"></script>
+<!--tab-->
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<!--图片左右滑动-->
+<script src="js/touchScroll.js"></script>
+<script src="js/touchslider.dev.js"></script>
+</head>
+<body class="reservation">
+  <div class="wrap">
+      <div class="right-nav">
+          <div class="right-nav-info box_sizing">
+              <div class="btns-top">
+                <a href="index.html" title="首页">首页</a>
+              </div>
+              <div class="btns-up">
+                <div class="title">GA8品鉴</div>
+                <a href="page1.html" title="智远前瞻系统">智远前瞻系统</a>
+                <a href="page2.html" title="智臻完美工艺">智臻完美工艺</a>
+                <a href="page3.html" title="智尊私享空间">智尊私享空间</a>
+                <a href="page4.html" title="智极动控体系">智极动控体系</a>
+              </div>
+              <div class="btns-middle">
+                <a href="page5.html" title="祺享服务">祺享服务</a>
+                <a href="#" title="智慧传祺">智慧传祺</a>
+                <a href="configure.html" title="参数与价格">参数与价格</a>
+
+              </div>
+              <div class="btns-dw">
+                <a href="#" title="广汽乘用车">广汽乘用车</a>
+                <a href="#" title="广汽传祺">广汽传祺</a>
+                <a href="#" title="传祺轿车">传祺轿车</a>
+              </div> 
+              <div class="btns-footer">
+                <div class="title">版权所有 © 2016 广州汽车集团乘用车有限公司 
+粤ICP备09202250号</div>
+              </div>  
+          </div>         
+      </div>
+      <header>
+          <img class="header-bj" src="images/header.png">
+          <img class="logo" alt="广汽传祺" src="images/logo.png">
+          <img class="nav-btn" src="images/nav-btn.png">
+      </header>  
+      <div class="container">
+        <form>
+              <p><img src="images/reservation-title.png"></p>
+              <p><input class="box_sizing" name="" type="text" placeholder="真实姓名"></p>
+              <p><input class="box_sizing" name="" type="text" placeholder="移动电话"></p>
+              <p class="province-city">
+                 <select class="box_sizing province">
+                     <option>省份</option>
+                 </select>
+                 <select class="box_sizing city">
+                     <option>城市</option>
+                 </select>
+              </p>
+              <p class="last"><label><input name="" type="checkbox" value=""><img src="images/reservation-text.png"></label></p>
+              <p><img src="images/submit.png"><button>提交</button></p>
+          </form>    
+      </div>
+  </div>
+<script src="js/move.js"></script>
+<script type="text/javascript">
+	 jQuery(".notice").slide({trigger:"click", titCell:".tab-hd li", mainCell:".tab-bd",delayTime:0 });
+</script>
+<script type="text/javascript">
+var t1=new TouchSlider({id:'hot_img',speed:600,timeout:10000});
+    $("#hot_img").css({"height":"auto"});
+	$('.left').click(function(){
+		t1.pause();
+	    t1.prev();
+	});
+	$('.right').click(function(){
+		t1.pause();
+	    t1.next();
+	});
+var t2=new TouchSlider({id:'hot_img2',speed:600,timeout:10000});
+    $("#hot_img2").css({"height":"auto"});
+  $('.left2').click(function(){
+    t2.pause();
+      t2.prev();
+  });
+  $('.right2').click(function(){
+    t2.pause();
+      t2.next();
+  })
+	
+</script>
+</body>
+</html>
